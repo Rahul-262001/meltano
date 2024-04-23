@@ -34,4 +34,29 @@ meltano init my-meltano-project
 ``` BASH
 meltano add extractor tap-mysql --variant=meltanolabs
 ```
-> # Note: ***git*** must be installed for the above command to work
+> ### Note: Might take some time.
+3. follow the instruction to create the yml file
+``` BASH
+meltano invoke tap-mysql --help
+```
+
+>### Might look something like this
+``` yml
+version: 1
+default_environment: dev
+project_id: 6bff755e-f038-4f64-af20-5df45d589725
+environments:
+- name: dev
+- name: staging
+- name: prod
+plugins:
+  extractors:
+  - name: tap-mysql
+    variant: transferwise
+    pip_url: pipelinewise-tap-mysql
+    config:
+      database: example_db
+      port: 3306
+      user: root
+      host: localhost
+```
