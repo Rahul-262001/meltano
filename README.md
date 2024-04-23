@@ -106,6 +106,21 @@ print(result.stdout)
 {"type": "STATE", "value": {"currently_syncing": null, "bookmarks": {"example_db-animals": {"initial_full_table_complete": true}}}}
 
 ```
-- [ ] All Done!!!! ✈️ 
+ ~~~All Done!!!!~~~
 
-
+# important url 
+``` url
+https://github.com/z3z1ma/target-bigquery
+```
+```url
+https://hub.meltano.com/loaders/target-bigquery/
+```
+``` url
+https://docs.meltano.com/getting-started/part1/#configure-the-extractor
+```
+``` url
+https://docs.meltano.com/getting-started/
+```
+```url
+https://meltano.com/
+```
