@@ -16,7 +16,7 @@ python -m pipx ensurepath
 ```
 > For Windows (PowerShell): Open up a new powershell instance to load your new path variables
 
-3. Install meltano
+3. Install Meltano
 ```BASH
 pipx install meltano
 ```
