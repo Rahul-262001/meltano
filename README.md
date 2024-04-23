@@ -113,6 +113,9 @@ print(result.stdout)
 https://github.com/z3z1ma/target-bigquery
 ```
 ```url
+https://hub.meltano.com/extractors/tap-mysql/
+```
+```url
 https://hub.meltano.com/loaders/target-bigquery/
 ```
 ``` url
