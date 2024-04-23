@@ -76,7 +76,7 @@ meltano select tap-mysql --list --all
 ``` BASH
 meltano run tap-mysql target-jsonl
 ```
-##OR
+## OR
 6. if properties.config file (catalog file) is available use this 
 ```BASH
 meltano invoke tap-mysql --catalog properties.json | meltano invoke target-jsonl
