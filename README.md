@@ -69,7 +69,7 @@ meltano add loader target-jsonl --variant=andyh1203
 
 5. Check the selected attribute
 ``` BASH
-meltano select tap-mysql --list --exclude
+meltano select tap-mysql --list --all
 ```
 
 6. Finally Sending the data
