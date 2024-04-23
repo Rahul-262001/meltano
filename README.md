@@ -108,5 +108,4 @@ print(result.stdout)
 ```
 - [ ] All Done!!!!
 
-|hello|sample|
-|----|----|
+
