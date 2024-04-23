@@ -34,4 +34,4 @@ meltano init my-meltano-project
 ``` BASH
 meltano add extractor tap-mysql --variant=meltanolabs
 ```
-> #Note: ***git*** must be installed for the above command to work
+> # Note: ***git*** must be installed for the above command to work
