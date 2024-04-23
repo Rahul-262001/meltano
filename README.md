@@ -62,7 +62,7 @@ plugins:
       host: localhost
 ```
 4. Sample Target
-> this need no configuration so good for testing
+> This needs no configuration so good for testing
 ``` bash
 meltano add loader target-jsonl --variant=andyh1203
 ```
