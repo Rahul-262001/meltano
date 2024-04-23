@@ -1,0 +1,23 @@
+version: 1
+default_environment: dev
+project_id: 6bff755e-f038-4f64-af20-5df45d589725
+environments:
+- name: dev
+- name: staging
+- name: prod
+plugins:
+  extractors:
+  - name: tap-mysql
+    variant: transferwise
+    pip_url: pipelinewise-tap-mysql
+    config:
+      database: example_db
+      table: animals
+      port: 3306
+      user: root
+      host: localhost
+      airbyte_config: example_db
+  loaders:
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl

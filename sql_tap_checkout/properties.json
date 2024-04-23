@@ -1,0 +1,87 @@
+{
+  "streams": [
+    {
+      "tap_stream_id": "example_db-animals",
+      "table_name": "animals",
+      "schema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "string"
+            ],
+            "maxLength": 255
+          },
+          "id": {
+            "inclusion": "automatic",
+            "minimum": -2147483648,
+            "maximum": 2147483647,
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "likes_getting_petted": {
+            "inclusion": "available",
+            "type": [
+              "null",
+              "boolean"
+            ]
+          }
+        }
+      },
+      "metadata": [
+        {
+          "breadcrumb": [],
+          "metadata": {
+            "row-count": 2000,
+            "table-key-properties": [
+              "id"
+            ],
+            "database-name": "example_db",
+            "selected-by-default": false,
+            "is-view": false,
+            "selected": true,
+            "replication-method": "FULL_TABLE"
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "id"
+          ],
+          "metadata": {
+            "sql-datatype": "int(11)",
+            "selected-by-default": true,
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "name"
+          ],
+          "metadata": {
+            "sql-datatype": "varchar(255)",
+            "selected-by-default": true,
+            "selected": true
+          }
+        },
+        {
+          "breadcrumb": [
+            "properties",
+            "likes_getting_petted"
+          ],
+          "metadata": {
+            "sql-datatype": "tinyint(1)",
+            "selected-by-default": true,
+            "selected": true
+          }
+        }
+      ],
+      "stream": "animals"
+    }
+  ]
+}
