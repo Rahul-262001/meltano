@@ -106,9 +106,9 @@ print(result.stdout)
 {"type": "STATE", "value": {"currently_syncing": null, "bookmarks": {"example_db-animals": {"initial_full_table_complete": true}}}}
 
 ```
- ~~~All Done!!!!~~~
-
+ ~~All Done!!!!~~
 # important url 
+
 ``` url
 https://github.com/z3z1ma/target-bigquery
 ```
