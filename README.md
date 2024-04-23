@@ -93,7 +93,7 @@ result = subprocess.run("meltano invoke tap-mysql --catalog properties.json", ca
 print(result.stdout)
 ```
 
-``` output
+``` Json
 {"type": "STATE", "value": {"currently_syncing": "example_db-animals"}}
 {"type": "SCHEMA", "stream": "example_db-animals", "schema": {"properties": {"likes_getting_petted": {"inclusion": "available", "minimum": -128, "maximum": 127, "type": ["null", "integer"]}, "name": {"inclusion": "available", "maxLength": 255, "type": ["null", "string"]}, "id": {"inclusion": "available", "minimum": -2147483648, "maximum": 2147483647, "type": ["null", "integer"]}}, "type": "object"}, "key_properties": ["id"]}
 {"type": "ACTIVATE_VERSION", "stream": "example_db-animals", "version": 1713860083046}
