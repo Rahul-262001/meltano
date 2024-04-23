@@ -38,6 +38,7 @@ meltano add extractor tap-mysql --variant=meltanolabs
 3. follow the instruction to create the yml file
 ``` BASH
 meltano invoke tap-mysql --help
+meltano config tap-mysql set --interactive
 ```
 
 >### Might look something like this
@@ -60,3 +61,19 @@ plugins:
       user: root
       host: localhost
 ```
+4. Sample Target
+> this need no configuration so good for testing
+``` bash
+meltano add loader target-jsonl --variant=andyh1203
+```
+
+5. Check the selected attribute
+``` BASH
+meltano select tap-mysql --list --exclude
+```
+
+6. Finally Sending the data
+``` BASH
+meltano run tap-mysql target-jsonl
+```
+> note usually all the contents of the database might be sent from tap so be careful
