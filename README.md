@@ -106,4 +106,4 @@ print(result.stdout)
 {"type": "STATE", "value": {"currently_syncing": null, "bookmarks": {"example_db-animals": {"initial_full_table_complete": true}}}}
 
 ```
-- [] All Done!!!!
+- [x] All Done!!!!
