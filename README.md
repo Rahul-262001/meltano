@@ -24,3 +24,14 @@ pipx install meltano
 ```BASH
 meltano --version
 ```
+
+## Getting Data from mysql
+1. Creating a new project
+```BASH
+meltano init my-meltano-project
+```
+2. Add an Extractor to Pull Data from a Source
+``` BASH
+meltano add extractor tap-mysql --variant=meltanolabs
+```
+> #Note: ***git*** must be installed for the above command to work
