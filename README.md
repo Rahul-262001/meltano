@@ -84,3 +84,11 @@ meltano invoke tap-mysql --catalog properties.json | meltano invoke target-jsonl
 ```
 
 > Note: all the output will be stored in the output folder
+
+## The Sample python code, Just to get an idea
+``` python
+import json
+import subprocess
+result = subprocess.run("meltano invoke tap-mysql --catalog properties.json", capture_output=True, text=True)
+print(result.stdout)
+```
