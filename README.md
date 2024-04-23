@@ -81,4 +81,5 @@ meltano run tap-mysql target-jsonl
 ```BASH
 meltano invoke tap-mysql --catalog properties.json | meltano invoke target-jsonl
 ```
-> note usually all the contents of the database might be sent from tap so be careful
+> Note: usually all the contents of the database might be sent from tap so be careful
+> Note: all the output will be stored in the output folder
